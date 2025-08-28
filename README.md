@@ -1,2 +1,20 @@
-# bitcoin-lightning-treasury-yield-calculator
-Calculate and visualize the impact of Lightning Network yield on your company's Bitcoin-per-share and GAAP EPS. Generate board-ready reports and unlock new earnings potential with narrative for an mNAV rise.
+# Base44 App
+
+
+This app was created automatically by Base44.
+It's a Vite+React app that communicates with the Base44 API.
+
+## Running the app
+
+```bash
+npm install
+npm run dev
+```
+
+## Building the app
+
+```bash
+npm run build
+```
+
+For more information and support, please contact Base44 support at app@base44.com.
