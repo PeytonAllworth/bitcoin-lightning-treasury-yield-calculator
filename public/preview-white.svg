@@ -1,0 +1,28 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <!-- White Background -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+  
+  <!-- Lightning Bolt -->
+  <g transform="translate(600, 315)" filter="url(#shadow)">
+    <path d="M-50,-100 L-25,-50 L-10,-75 L25,-25 L10,-10 L40,35 L25,50 L50,100 L40,85 L-10,40 L-25,60 L-50,100 Z" 
+          fill="#D97316" stroke="#FFFFFF" stroke-width="3"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="600" y="450" font-family="Lato, Arial, sans-serif" font-size="72" font-weight="400" 
+        text-anchor="middle" fill="#D97316">
+    Lightning Yield
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="500" font-family="Lato, Arial, sans-serif" font-size="24" font-weight="400" 
+        text-anchor="middle" fill="#666666">
+    Bitcoin Treasury Analytics & Yield Research
+  </text>
+</svg>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create PNG Preview Images</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 1400px;
+        }
+        
+        .preview-section {
+            margin: 30px 0;
+            border: 2px solid #ccc;
+            padding: 20px;
+        }
+        
+        .preview-section h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        
+        .instructions {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        
+        .step {
+            margin: 10px 0;
+            padding: 5px 0;
+        }
+        
+        .highlight {
+            background: #D97316;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .version-label {
+            background: #D97316;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📸 Create PNG Preview Images</h1>
+        <p><strong>Both versions are 1200×630 pixels - perfect for social media!</strong></p>
+        
+        <!-- Version A: White Background -->
+        <div class="preview-section">
+            <div class="version-label">Version A: White Background with Orange ⚡</div>
+            <div id="preview-white"></div>
+            
+            <div class="instructions">
+                <h3>📋 Steps to Create PNG:</h3>
+                <div class="step">
+                    <span class="highlight">1.</span> Right-click on the white image above
+                </div>
+                <div class="step">
+                    <span class="highlight">2.</span> Select "Save image as..."
+                </div>
+                <div class="step">
+                    <span class="highlight">3.</span> Save as <strong>preview.png</strong> in your <strong>public/</strong> folder
+                </div>
+            </div>
+        </div>
+        
+        <!-- Version B: Dark Background -->
+        <div class="preview-section">
+            <div class="version-label">Version B: Dark Background with Glowing ⚡</div>
+            <div id="preview-dark"></div>
+            
+            <div class="instructions">
+                <h3>📋 Alternative Version:</h3>
+                <div class="step">
+                    <span class="highlight">1.</span> Right-click on the dark image above
+                </div>
+                <div class="step">
+                    <span class="highlight">2.</span> Select "Save image as..."
+                </div>
+                <div class="step">
+                    <span class="highlight">3.</span> Save as <strong>preview.png</strong> in your <strong>public/</strong> folder
+                </div>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>🎯 After Creating PNG:</h3>
+            <div class="step">
+                <span class="highlight">1.</span> Make sure <strong>preview.png</strong> is in your <strong>public/</strong> folder
+            </div>
+            <div class="step">
+                <span class="highlight">2.</span> Deploy to Vercel
+            </div>
+            <div class="step">
+                <span class="highlight">3.</span> Test with: https://www.opengraph.xyz/
+            </div>
+        </div>
+        
+        <p><strong>💡 Tip:</strong> Choose whichever version you prefer! Both will work perfectly.</p>
+    </div>
+    
+    <script>
+        // Load the SVG files
+        fetch('preview-white.svg')
+            .then(response => response.text())
+            .then(svg => {
+                document.getElementById('preview-white').innerHTML = svg;
+            });
+            
+        fetch('preview-dark.svg')
+            .then(response => response.text())
+            .then(svg => {
+                document.getElementById('preview-dark').innerHTML = svg;
+            });
+    </script>
+</body>
+</html>
