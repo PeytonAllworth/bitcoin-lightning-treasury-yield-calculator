@@ -1,20 +1,28 @@
-# Base44 App
+# ⚡ Lightning Yield
 
+A Bitcoin treasury calculator and yield modeling tool.
 
-This app was created automatically by Base44.
-It's a Vite+React app that communicates with the Base44 API.
+This app helps you model Bitcoin treasuries, visualize Lightning yield, and track sats per share with and with varying lightning strategies.
 
-## Running the app
+## Features
+
+- Bitcoin treasury modeling
+- Lightning yield visualization
+- NAV tracking in sats
+- Professional financial tools
+
+## Getting Started
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Building the app
+## Tech Stack
 
-```bash
-npm run build
-```
+- Vite + React
+- Tailwind CSS
+- Bitcoin integration
+- Professional UI components
 
-For more information and support, please contact Base44 support at app@base44.com.
+For more information and support, please contact the Lightning Yield team.
