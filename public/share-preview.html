@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Share Card Preview – Lightning Yield</title>
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+  <style>
+    :root { --bg:#0b0f14; --card:#111827; --text:#e5e7eb; --muted:#9ca3af; }
+    html,body{height:100%;margin:0;background:var(--bg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;color:var(--text)}
+    .wrap{max-width:980px;margin:40px auto;padding:24px}
+    .row{display:flex;gap:24px;align-items:flex-start}
+    .card{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.35);width:1200px;max-width:100%}
+    .image{aspect-ratio:1200/630;background:#0b0b0b;display:flex;align-items:center;justify-content:center}
+    .image img{width:100%;height:100%;object-fit:cover}
+    .meta{padding:18px 20px}
+    .title{font-weight:700;font-size:20px}
+    .desc{color:var(--muted);margin-top:6px}
+    a{color:#60a5fa;text-decoration:none}
+    .assets{margin-top:24px}
+    .assets a{display:block;margin:6px 0}
+    .favicon{display:inline-flex;align-items:center;gap:10px;margin-top:12px}
+    .favicon img{width:32px;height:32px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="row">
+      <div class="card">
+        <div class="image">
+          <img src="/framer-bitcoin.png" alt="OG Image" />
+        </div>
+        <div class="meta">
+          <div class="title">⚡ Lightning Yield</div>
+          <div class="desc">Bitcoin Treasury Analytics & Yield Research</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="assets">
+      <div class="favicon">
+        <img src="/favicon-32x32.png" alt="favicon" />
+        <span>Favicon (32×32)</span>
+      </div>
+      <a href="/apple-touch-icon.png" target="_blank">Open apple-touch-icon (180×180)</a>
+      <a href="/framer-bitcoin.png" target="_blank">Open OG image (2240×1260)</a>
+      <a href="/" target="_blank">Open app root</a>
+    </div>
+  </div>
+</body>
+</html>

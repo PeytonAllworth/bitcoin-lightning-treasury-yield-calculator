@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Image Preview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .image-preview {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+        }
+        .info {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+        .dimensions {
+            font-family: monospace;
+            background: #e9ecef;
+            padding: 5px 10px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🧪 Testing Your Framer Image</h1>
+        <p>This is how your image will look as a social media preview:</p>
+        
+        <img src="/framer-bitcoin.png" 
+             alt="Bitcoin Lightning Preview" 
+             class="image-preview" />
+        
+        <div class="info">
+            <h3>📊 Image Details:</h3>
+            <p><strong>Source:</strong> Local file (downloaded from Framer)</p>
+            <p><strong>URL:</strong> <code>/framer-bitcoin.png</code></p>
+            <p><strong>Original Size:</strong> 2240 × 1260px</p>
+            <p><strong>Status:</strong> <span id="status">Loading...</span></p>
+            <p><strong>Dimensions:</strong> <span id="dimensions">Checking...</span></p>
+        </div>
+        
+        <div class="info">
+            <h3>✅ If you like this image:</h3>
+            <p>I'll help you implement it as your Open Graph preview image!</p>
+        </div>
+    </div>
+
+    <script>
+        // Test if image loads
+        const img = document.querySelector('.image-preview');
+        const status = document.getElementById('status');
+        const dimensions = document.getElementById('dimensions');
+        
+        img.onload = function() {
+            status.textContent = '✅ Loaded successfully!';
+            status.style.color = 'green';
+            dimensions.textContent = `${img.naturalWidth} × ${img.naturalHeight}px`;
+        };
+        
+        img.onerror = function() {
+            status.textContent = '❌ Failed to load';
+            status.style.color = 'red';
+        };
+    </script>
+</body>
+</html>
